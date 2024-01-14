@@ -15,12 +15,12 @@ struct GlosarioABCView: View {
     @State var signs = Sign.getDummyABCSigns()
     
     private let adaptiveColumns = [
-        GridItem(.adaptive(minimum: 70))
+        GridItem(.adaptive(minimum: 70, maximum: 200))
         
     ]
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack{
                 Color(.background).ignoresSafeArea()
                 VStack{

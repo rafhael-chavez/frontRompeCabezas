@@ -23,8 +23,6 @@ struct SignVideoView: View {
         useModestBranding: true,
         showRelatedVideos: false
         
-        
-        
     )
     
     var body: some View {
@@ -34,18 +32,15 @@ struct SignVideoView: View {
                 VStack{
                     /*RoundedRectangle(cornerRadius: 10)
                      .frame(width: 350.0, height: 600.0)*/
-                    Text("")
-                    Text("")
-                    Text("")
-                    Text(content).font(Font.varTitle).padding(.top).foregroundColor(.white)
+                    Text(content).font(Font.varTitle).foregroundColor(.white)
                     YouTubePlayerView(
                         YouTubePlayer(
                             source: .url("https://youtu.be/32GZ3suxRn4"),
                             configuration: configuration
                         )
-                    ).frame(height: 600)
-                        .cornerRadius(8.0)
-                        .padding([.leading, .bottom, .trailing])
+                    ).frame(height: 560)
+                        .cornerRadius(10.0)
+                        .padding([.leading, .trailing])
                     /*NavigationLink(destination: GlosarioABCView()){
                         Capsule().fill(Color.accentColor).overlay(
                             HStack(alignment: .center){
