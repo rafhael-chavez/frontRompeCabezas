@@ -10,19 +10,15 @@ import SwiftUI
 struct SignOption: View {
     var content: String
     var body: some View {
-        ZStack{
-            Button{
-                
-            }
-        label:{
+        
             ZStack{
                 RoundedRectangle(cornerRadius: 10).aspectRatio(contentMode: .fit).foregroundColor(.secundarycolor)
-                Text(content).font(Font.varMainTitle).foregroundColor(.accentColor)
+                Text(content).font(Font.varSignOption).foregroundColor(.accentColor)
             }
-        }
+        
         }
         
-    }
+    
 }
 
 #Preview {

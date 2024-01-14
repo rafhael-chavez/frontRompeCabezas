@@ -27,4 +27,7 @@ extension Font{
     static var varTitleSmall: Font{
         return Font.custom("Chapeau-Bold",size:42)
     }
+    static var varSignOption: Font{
+        return Font.custom("Chapeau-Bold",size:30)
+    }
 }

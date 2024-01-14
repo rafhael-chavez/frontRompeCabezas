@@ -36,16 +36,7 @@ struct menuView: View {
                                 .frame(width: 300.0, height: 50.0)
                                 .background(Color("Secundarycolor"))
                                 .cornerRadius(100)
-                            /* Button {
-                             
-                             } label: {
-                             Text("escanea")
-                             .foregroundColor(.white)
-                             .font(Font.varButtonLabel)
-                             .frame(width: 300.0, height: 50.0)
-                             .background(Color("Secundarycolor"))
-                             .cornerRadius(100)
-                             }*/
+                            
                         }
                         
                         NavigationLink(destination: GlosarioABCView()){
@@ -55,16 +46,7 @@ struct menuView: View {
                                 .frame(width: 300.0, height: 50.0)
                                 .background(Color("Secundarycolor"))
                                 .cornerRadius(100)
-                            /*Button {
-                                
-                            } label: {
-                                Text("glosario")
-                                    .foregroundColor(.white)
-                                    .font(Font.varButtonLabel)
-                                    .frame(width: 300.0, height: 50.0)
-                                    .background(Color("Secundarycolor"))
-                                    .cornerRadius(100)
-                            }*/
+                           
                         }
                         
                     }.padding()
