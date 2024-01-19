@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct menuView: View {
     var body: some View {
@@ -29,7 +30,7 @@ struct menuView: View {
                         Text("ventura").foregroundColor(.accentColor).font(Font.varMainTitle).frame(height: 85.0)
                     }
                     VStack{
-                        NavigationLink(destination: CameraScanView()){
+                        NavigationLink(destination: CameraScanView(labelData: Classification())){
                             Text("escanea")
                                 .foregroundColor(.white)
                                 .font(Font.varButtonLabel)

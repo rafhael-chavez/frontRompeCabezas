@@ -27,6 +27,15 @@
 		FB5A05B92B5474FA00D09AD3 /* SignVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05B82B5474FA00D09AD3 /* SignVideoView.swift */; };
 		FB5A05BB2B54765100D09AD3 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05BA2B54765000D09AD3 /* Sign.swift */; };
 		FB5A05BE2B54820C00D09AD3 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB5A05BD2B54820C00D09AD3 /* YouTubePlayerKit */; };
+		FB5A05C22B5AFE5600D09AD3 /* PuzzleSigns1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05C02B5AFE5600D09AD3 /* PuzzleSigns1.mlmodel */; };
+		FB5A05C32B5AFE5600D09AD3 /* PredictionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05C12B5AFE5600D09AD3 /* PredictionStatus.swift */; };
+		FB5A05C72B5AFE7000D09AD3 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05C52B5AFE7000D09AD3 /* Classification.swift */; };
+		FB5A05C82B5AFE7000D09AD3 /* mydata.geojson in Resources */ = {isa = PBXBuildFile; fileRef = FB5A05C62B5AFE7000D09AD3 /* mydata.geojson */; };
+		FB5A05D22B5AFE7D00D09AD3 /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05CB2B5AFE7C00D09AD3 /* ClassifierViewModel.swift */; };
+		FB5A05D32B5AFE7D00D09AD3 /* LiveCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05CD2B5AFE7C00D09AD3 /* LiveCameraController.swift */; };
+		FB5A05D42B5AFE7D00D09AD3 /* LiveCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05CE2B5AFE7C00D09AD3 /* LiveCameraRepresentable.swift */; };
+		FB5A05D52B5AFE7D00D09AD3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05D02B5AFE7C00D09AD3 /* Constants.swift */; };
+		FB5A05D62B5AFE7D00D09AD3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05D12B5AFE7D00D09AD3 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +79,15 @@
 		FB5A05B62B51B06C00D09AD3 /* SignOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOption.swift; sourceTree = "<group>"; };
 		FB5A05B82B5474FA00D09AD3 /* SignVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVideoView.swift; sourceTree = "<group>"; };
 		FB5A05BA2B54765000D09AD3 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		FB5A05C02B5AFE5600D09AD3 /* PuzzleSigns1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PuzzleSigns1.mlmodel; sourceTree = "<group>"; };
+		FB5A05C12B5AFE5600D09AD3 /* PredictionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionStatus.swift; sourceTree = "<group>"; };
+		FB5A05C52B5AFE7000D09AD3 /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		FB5A05C62B5AFE7000D09AD3 /* mydata.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mydata.geojson; sourceTree = "<group>"; };
+		FB5A05CB2B5AFE7C00D09AD3 /* ClassifierViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
+		FB5A05CD2B5AFE7C00D09AD3 /* LiveCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraController.swift; sourceTree = "<group>"; };
+		FB5A05CE2B5AFE7C00D09AD3 /* LiveCameraRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraRepresentable.swift; sourceTree = "<group>"; };
+		FB5A05D02B5AFE7C00D09AD3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB5A05D12B5AFE7D00D09AD3 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +153,9 @@
 				FB5A05B02B50FFC300D09AD3 /* CameraScanView.swift */,
 				FB5A05AA2B50FC9000D09AD3 /* GlosarioNumView.swift */,
 				FB5A05A42B50873700D09AD3 /* FontStyles.swift */,
+				FB5A05BF2B5AFE5600D09AD3 /* Model */,
+				FB5A05C42B5AFE7000D09AD3 /* Data */,
+				FB5A05C92B5AFE7C00D09AD3 /* Foundation */,
 				FB5A05762B50818D00D09AD3 /* Assets.xcassets */,
 				FB5A05782B50818D00D09AD3 /* Preview Content */,
 			);
@@ -173,6 +194,60 @@
 				FB5A05A12B5086B000D09AD3 /* Chapeau-Bold.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		FB5A05BF2B5AFE5600D09AD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A05C02B5AFE5600D09AD3 /* PuzzleSigns1.mlmodel */,
+				FB5A05C12B5AFE5600D09AD3 /* PredictionStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB5A05C42B5AFE7000D09AD3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A05C52B5AFE7000D09AD3 /* Classification.swift */,
+				FB5A05C62B5AFE7000D09AD3 /* mydata.geojson */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB5A05C92B5AFE7C00D09AD3 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A05CA2B5AFE7C00D09AD3 /* ModelViews */,
+				FB5A05CC2B5AFE7C00D09AD3 /* CameraViewControllers */,
+				FB5A05CF2B5AFE7C00D09AD3 /* Helpers */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FB5A05CA2B5AFE7C00D09AD3 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A05CB2B5AFE7C00D09AD3 /* ClassifierViewModel.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		FB5A05CC2B5AFE7C00D09AD3 /* CameraViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A05CD2B5AFE7C00D09AD3 /* LiveCameraController.swift */,
+				FB5A05CE2B5AFE7C00D09AD3 /* LiveCameraRepresentable.swift */,
+			);
+			path = CameraViewControllers;
+			sourceTree = "<group>";
+		};
+		FB5A05CF2B5AFE7C00D09AD3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A05D02B5AFE7C00D09AD3 /* Constants.swift */,
+				FB5A05D12B5AFE7D00D09AD3 /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +364,7 @@
 				FB5A05A22B5086B000D09AD3 /* Chapeau-Bold.ttf in Resources */,
 				FB5A05A02B50869800D09AD3 /* Chapeau-Medium.ttf in Resources */,
 				FB5A05772B50818D00D09AD3 /* Assets.xcassets in Resources */,
+				FB5A05C82B5AFE7000D09AD3 /* mydata.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,18 +389,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5A05C22B5AFE5600D09AD3 /* PuzzleSigns1.mlmodel in Sources */,
+				FB5A05D52B5AFE7D00D09AD3 /* Constants.swift in Sources */,
 				FB5A05B52B51A8D800D09AD3 /* SelectedButtonOption.swift in Sources */,
+				FB5A05D62B5AFE7D00D09AD3 /* Helpers.swift in Sources */,
 				FB5A05B72B51B06C00D09AD3 /* SignOption.swift in Sources */,
 				FB5A05BB2B54765100D09AD3 /* Sign.swift in Sources */,
 				FB5A05B12B50FFC300D09AD3 /* CameraScanView.swift in Sources */,
+				FB5A05D22B5AFE7D00D09AD3 /* ClassifierViewModel.swift in Sources */,
 				FB5A059D2B5081DC00D09AD3 /* menuView.swift in Sources */,
+				FB5A05C32B5AFE5600D09AD3 /* PredictionStatus.swift in Sources */,
 				FB5A05AF2B50FD0300D09AD3 /* MenuTabView.swift in Sources */,
+				FB5A05D42B5AFE7D00D09AD3 /* LiveCameraRepresentable.swift in Sources */,
 				FB5A05752B50817E00D09AD3 /* ContentView.swift in Sources */,
 				FB5A05A52B50873700D09AD3 /* FontStyles.swift in Sources */,
 				FB5A05B92B5474FA00D09AD3 /* SignVideoView.swift in Sources */,
 				FB5A05732B50817E00D09AD3 /* pruebaApp.swift in Sources */,
 				FB5A05AB2B50FC9000D09AD3 /* GlosarioNumView.swift in Sources */,
 				FB5A05A92B50FC7A00D09AD3 /* GlosarioABCView.swift in Sources */,
+				FB5A05C72B5AFE7000D09AD3 /* Classification.swift in Sources */,
+				FB5A05D32B5AFE7D00D09AD3 /* LiveCameraController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +572,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"prueba/Preview Content\"";
+				DEVELOPMENT_TEAM = 55ZUXY2U69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = prueba/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -517,9 +603,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"prueba/Preview Content\"";
+				DEVELOPMENT_TEAM = 55ZUXY2U69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = prueba/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
