@@ -12,8 +12,9 @@ struct CameraScanView: View {
     @StateObject var classifierViewModel = ClassifierViewModel()
     private(set) var labelData: Classification
     @State private var ansChosen = ""
+    @State private var videoLink = "URL"
+    @State private var video = "https://youtu.be/32GZ3suxRn4"
     @State private var picture = 1
-    @State private var colorLetra = "white"
     
     var body: some View {
         let predictionLabel = predictionStatus.topLabel
@@ -42,7 +43,7 @@ struct CameraScanView: View {
                         
                        
                             
-                            NavigationLink(destination: VideoView()) {
+
                                 Button(action: {
                                     ansChosen = predictionLabel
                                     print("button pressed")
@@ -107,7 +108,7 @@ struct CameraScanView: View {
                                     } else if ansChosen == "1"{
                                         picture = 29
                                     } else if ansChosen == "2"{
-                                        picture = 30
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
                                     } else if ansChosen == "3"{
                                         picture = 31
                                     } else if ansChosen == "4"{
@@ -135,7 +136,14 @@ struct CameraScanView: View {
                                 }
                                 .buttonStyle(.borderedProminent)
                                 .tint(.yellow)
-                            }
+                        NavigationLink(destination: ScanVideoView(ytLink: videoLink, content: ansChosen, vid: video)) {
+                            Text("video")
+                                .foregroundColor(.white)
+                                .font(Font.varButtonLabel)
+                                .frame(width: 300.0, height: 50.0)
+                                .background(Color("Secundarycolor"))
+                                .cornerRadius(100)
+                        }
                             
                         
                     }
