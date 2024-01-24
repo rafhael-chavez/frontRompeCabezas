@@ -22,5 +22,5 @@ struct SignOption: View {
 }
 
 #Preview {
-    SignOption(content: "Aa")
+    SignOption(content: "A")
 }

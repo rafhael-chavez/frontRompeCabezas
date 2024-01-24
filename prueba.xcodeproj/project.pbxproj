@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AFF210E2B60649800401CD8 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF210D2B60649800401CD8 /* ArrowButton.swift */; };
 		FB5A05732B50817E00D09AD3 /* pruebaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05722B50817E00D09AD3 /* pruebaApp.swift */; };
 		FB5A05752B50817E00D09AD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05742B50817E00D09AD3 /* ContentView.swift */; };
 		FB5A05772B50818D00D09AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5A05762B50818D00D09AD3 /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		FB5A05842B50818D00D09AD3 /* pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05832B50818D00D09AD3 /* pruebaTests.swift */; };
 		FB5A058E2B50818D00D09AD3 /* pruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A058D2B50818D00D09AD3 /* pruebaUITests.swift */; };
 		FB5A05902B50818D00D09AD3 /* pruebaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A058F2B50818D00D09AD3 /* pruebaUITestsLaunchTests.swift */; };
-		FB5A059D2B5081DC00D09AD3 /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A059C2B5081DC00D09AD3 /* menuView.swift */; };
+		FB5A059D2B5081DC00D09AD3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A059C2B5081DC00D09AD3 /* MenuView.swift */; };
 		FB5A05A02B50869800D09AD3 /* Chapeau-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB5A059F2B50869800D09AD3 /* Chapeau-Medium.ttf */; };
 		FB5A05A22B5086B000D09AD3 /* Chapeau-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB5A05A12B5086B000D09AD3 /* Chapeau-Bold.ttf */; };
 		FB5A05A52B50873700D09AD3 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05A42B50873700D09AD3 /* FontStyles.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AFF210D2B60649800401CD8 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
 		FB5A056F2B50817E00D09AD3 /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5A05722B50817E00D09AD3 /* pruebaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaApp.swift; sourceTree = "<group>"; };
 		FB5A05742B50817E00D09AD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +59,7 @@
 		FB5A05892B50818D00D09AD3 /* pruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5A058D2B50818D00D09AD3 /* pruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUITests.swift; sourceTree = "<group>"; };
 		FB5A058F2B50818D00D09AD3 /* pruebaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FB5A059C2B5081DC00D09AD3 /* menuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
+		FB5A059C2B5081DC00D09AD3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FB5A059F2B50869800D09AD3 /* Chapeau-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chapeau-Medium.ttf"; sourceTree = "<group>"; };
 		FB5A05A12B5086B000D09AD3 /* Chapeau-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chapeau-Bold.ttf"; sourceTree = "<group>"; };
 		FB5A05A32B5086C300D09AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -125,9 +127,10 @@
 				FB5A059E2B5085C900D09AD3 /* fonts */,
 				FB5A05722B50817E00D09AD3 /* pruebaApp.swift */,
 				FB5A05742B50817E00D09AD3 /* ContentView.swift */,
-				FB5A059C2B5081DC00D09AD3 /* menuView.swift */,
+				FB5A059C2B5081DC00D09AD3 /* MenuView.swift */,
 				FB5A05B82B5474FA00D09AD3 /* SignVideoView.swift */,
 				FB5A05A82B50FC7A00D09AD3 /* GlosarioABCView.swift */,
+				4AFF210D2B60649800401CD8 /* ArrowButton.swift */,
 				FB5A05BA2B54765000D09AD3 /* Sign.swift */,
 				FB5A05B42B51A8D800D09AD3 /* SelectedButtonOption.swift */,
 				FB5A05AE2B50FD0300D09AD3 /* MenuTabView.swift */,
@@ -317,10 +320,11 @@
 				FB5A05B72B51B06C00D09AD3 /* SignOption.swift in Sources */,
 				FB5A05BB2B54765100D09AD3 /* Sign.swift in Sources */,
 				FB5A05B12B50FFC300D09AD3 /* CameraScanView.swift in Sources */,
-				FB5A059D2B5081DC00D09AD3 /* menuView.swift in Sources */,
+				FB5A059D2B5081DC00D09AD3 /* MenuView.swift in Sources */,
 				FB5A05AF2B50FD0300D09AD3 /* MenuTabView.swift in Sources */,
 				FB5A05752B50817E00D09AD3 /* ContentView.swift in Sources */,
 				FB5A05A52B50873700D09AD3 /* FontStyles.swift in Sources */,
+				4AFF210E2B60649800401CD8 /* ArrowButton.swift in Sources */,
 				FB5A05B92B5474FA00D09AD3 /* SignVideoView.swift in Sources */,
 				FB5A05732B50817E00D09AD3 /* pruebaApp.swift in Sources */,
 				FB5A05AB2B50FC9000D09AD3 /* GlosarioNumView.swift in Sources */,

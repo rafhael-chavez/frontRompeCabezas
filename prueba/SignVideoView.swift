@@ -11,53 +11,54 @@ import YouTubePlayerKit
 struct SignVideoView: View {
     var ytLink: String
     var content: String
+    var leftArrowAction: () -> Void
+    var rightArrowAction: () -> Void
     let configuration = YouTubePlayer.Configuration(
-        // Define which fullscreen mode should be used (system or web)
         fullscreenMode: .system,
-        // Enable auto play
-        autoPlay: true,
-        // Hide controls
+        autoPlay: false,
         showControls: true,
         showFullscreenButton: true,
         loopEnabled: true,
         useModestBranding: true,
         showRelatedVideos: false
-        
     )
     
     var body: some View {
-        
-            ZStack{
-                Color(.background).ignoresSafeArea()
-                VStack{
-                    /*RoundedRectangle(cornerRadius: 10)
-                     .frame(width: 350.0, height: 600.0)*/
-                    Text(content).font(Font.varTitle).foregroundColor(.white)
-                    YouTubePlayerView(
-                        YouTubePlayer(
-                            source: .url("https://youtu.be/32GZ3suxRn4"),
-                            configuration: configuration
-                        )
-                    ).frame(height: 560)
-                        .cornerRadius(10.0)
-                        .padding([.leading, .trailing])
-                    /*NavigationLink(destination: GlosarioABCView()){
-                        Capsule().fill(Color.accentColor).overlay(
-                            HStack(alignment: .center){
-                                Image("Arrow")
-                                Text("regresar").foregroundColor(.secundarycolor).font(Font.varButtonLabel)
-                            }
-                            
-                        ).frame(width: 175.0, height: 50.0)
-                    }*/
+        ZStack {
+            Color(.background).edgesIgnoringSafeArea(.all)
+            VStack {
+                HStack {
+                    ArrowButton(direction: "left", action: leftArrowAction)
                     
+                    Spacer()
                     
+                    Text(content)
+                        .font(Font.varTitle)
+                        .foregroundColor(.white)
+                        .lineLimit(2)
+                    
+                    Spacer()
+                    
+                    ArrowButton(direction: "right", action: rightArrowAction)
                 }
+                .padding()
+                
+                YouTubePlayerView(
+                    YouTubePlayer(
+                        source: .url(ytLink),
+                        configuration: configuration
+                    )
+                )
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .cornerRadius(15.0)
+                .padding([.leading, .trailing])
             }
-        
+        }
     }
 }
 
-#Preview {
-    SignVideoView(ytLink: "URL", content: "Aa")
+struct SignVideoView_Previews: PreviewProvider {
+    static var previews: some View {
+        SignVideoView(ytLink: "https://youtu.be/32GZ3suxRn4", content: "A", leftArrowAction: {}, rightArrowAction: {})
+    }
 }
