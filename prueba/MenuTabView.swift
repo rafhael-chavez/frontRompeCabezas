@@ -13,7 +13,7 @@ struct MenuTabView: View {
             TabView{
                 MenuView().tabItem { Image("Home").renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                 }
-                CameraScanView().tabItem {
+                CameraScanView(labelData: Classification()).tabItem {
                     Image("Camera").renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                 }
                 GlosarioABCView().tabItem {
