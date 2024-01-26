@@ -40,10 +40,40 @@ struct CameraScanView: View {
                      */
                     VStack {
                         ShowSignView(labelData: classifierViewModel.getPredictionData(label: predictionLabel))
-                        
-                       
-                            
-
+                        NavigationLink(destination: ScanVideoView(ytLink: videoLink, content: ansChosen, vid: video)) {
+                            Image("Camera")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                        .simultaneousGesture(
+                            TapGesture()
+                                .onEnded {
+                                    ansChosen = predictionLabel
+                                    print("button pressed")
+                                    if ansChosen == "1"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    }  else if ansChosen == "2"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "3"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "4"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "5"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "6"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "7"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "8"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "9"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    } else if ansChosen == "10"{
+                                        video = "https://www.youtube.com/watch?v=Wdjh81uH6FU"
+                                    }
+                                }
+                        )
+                                /*
                                 Button(action: {
                                     ansChosen = predictionLabel
                                     print("button pressed")
@@ -144,7 +174,7 @@ struct CameraScanView: View {
                                 .background(Color("Secundarycolor"))
                                 .cornerRadius(100)
                         }
-                            
+                            */
                         
                     }
                 }
