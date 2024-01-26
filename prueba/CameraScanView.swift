@@ -40,9 +40,14 @@ struct CameraScanView: View {
                     VStack {
                         ShowSignView(labelData: classifierViewModel.getPredictionData(label: predictionLabel))
                         NavigationLink(destination: ScanVideoView(ytLink: videoLink, content: ansChosen, vid: video)) {
-                            Image("Camera")
-                                .resizable()
-                                .frame(width: 50, height: 50)
+                            ZStack{
+                                Circle()
+                                    .fill(Color("AccentColor"))
+                                    .frame(width: 50, height: 50)
+                                Image("Camera")
+                                    .resizable()
+                                    .frame(width: 50, height: 50) 
+                            }
                         }
                         .simultaneousGesture(
                             TapGesture()
