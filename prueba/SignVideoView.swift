@@ -7,21 +7,14 @@
 
 import SwiftUI
 import YouTubePlayerKit
+import AVKit
 
 struct SignVideoView: View {
     var ytLink: String
     var content: String
     var leftArrowAction: () -> Void
     var rightArrowAction: () -> Void
-    let configuration = YouTubePlayer.Configuration(
-        fullscreenMode: .system,
-        autoPlay: false,
-        showControls: true,
-        showFullscreenButton: true,
-        loopEnabled: true,
-        useModestBranding: true,
-        showRelatedVideos: false
-    )
+    
     
     var body: some View {
         ZStack {
@@ -42,13 +35,8 @@ struct SignVideoView: View {
                     ArrowButton(direction: "right", action: rightArrowAction)
                 }
                 .padding()
-                
-                YouTubePlayerView(
-                    YouTubePlayer(
-                        source: .url(ytLink),
-                        configuration: configuration
-                    )
-                )
+                VideoPlayer(player:  AVPlayer(url: Bundle.main.url(forResource: content,
+                                                                   withExtension: "mp4")!))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .cornerRadius(15.0)
                 .padding([.leading, .trailing])
@@ -59,6 +47,6 @@ struct SignVideoView: View {
 
 struct SignVideoView_Previews: PreviewProvider {
     static var previews: some View {
-        SignVideoView(ytLink: "https://youtu.be/32GZ3suxRn4", content: "A", leftArrowAction: {}, rightArrowAction: {})
+        SignVideoView(ytLink: "https://youtu.be/32GZ3suxRn4", content: "1", leftArrowAction: {}, rightArrowAction: {})
     }
 }

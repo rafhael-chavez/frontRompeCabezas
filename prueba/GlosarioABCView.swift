@@ -43,7 +43,7 @@ struct GlosarioABCView: View {
                         }
                         
                         ScrollView {
-                            LazyVGrid(columns: [GridItem(.adaptive(minimum: 110, maximum:250))], spacing: 20) {
+                            LazyVGrid(columns: [GridItem(.adaptive(minimum: 110))], spacing: 20) {
                                 ForEach(Array(signs.enumerated()), id: \.element.id) { index, sign in
                                     NavigationLink(destination: SignVideoView(
                                         ytLink: signs[currentIndex].videoLink,
