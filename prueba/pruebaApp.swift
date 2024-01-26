@@ -9,13 +9,9 @@ import SwiftUI
 
 @main
 struct pruebaApp: App {
-    
-    @StateObject private var predictionStatus = PredictionStatus()
-    
     var body: some Scene {
         WindowGroup {
-            menuView()
-                .environmentObject(predictionStatus)
+            MenuView()
         }
     }
 }

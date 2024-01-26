@@ -21,15 +21,12 @@ extension Font{
     static var varItemLabel: Font{
         return Font.custom("Chapeau-Bold",size:20)
     }
-    
     static var varMainTitle: Font{
         return Font.custom("Chapeau-Bold",size:75)
     }
-    
     static var varTitleSmall: Font{
         return Font.custom("Chapeau-Bold",size:42)
     }
-    
     static var varSignOption: Font{
         return Font.custom("Chapeau-Bold",size:30)
     }
