@@ -10,8 +10,6 @@ struct CameraScanView: View {
     @EnvironmentObject var predictionStatus: PredictionStatus
     @StateObject var classifierViewModel = ClassifierViewModel()
     private(set) var labelData: Classification
-    //@State private var videoLink = "URL"
-    //@State private var video = "https://youtu.be/32GZ3suxRn4"
     @State private var scan = "1"
     
     var body: some View {
