@@ -36,7 +36,7 @@ struct Sign: Identifiable {
 
                 // Incluir las letras especiales después de sus respectivas letras
                 if char == "L" {
-                    signs.append(Sign(content: "LL", videoLink: "URLL"))
+                    signs.append(Sign(content: "LL", videoLink: "URLLL"))
                 } else if char == "R" {
                     signs.append(Sign(content: "RR", videoLink: "URLRR"))
                 }
