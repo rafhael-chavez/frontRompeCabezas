@@ -15,7 +15,7 @@ struct ArrowButton: View {
         Button(action: action) {
             Image(systemName: direction == "left" ? "arrowshape.backward.circle.fill" : "arrowshape.right.circle.fill")
                 .foregroundColor(.accentColor)
-                .font(.title)
+                
         }
     }
 }

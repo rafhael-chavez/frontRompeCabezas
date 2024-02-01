@@ -58,7 +58,7 @@ struct MenuView: View {
                     
                     Image("Mascot").resizable().aspectRatio(contentMode: .fit).frame(width: 300.0, height: 300.0)
                 }
-            }.navigationTitle("Inicio").navigationBarHidden(true)
+            }.navigationTitle("Inicio").navigationBarHidden(true).navigationBarTitleDisplayMode(.inline)
         }
     }
 }
