@@ -35,8 +35,7 @@ struct SignVideoView: View {
                     ArrowButton(direction: "right", action: rightArrowAction)
                 }
                 .padding()
-                VideoPlayer(player:  AVPlayer(url: Bundle.main.url(forResource: content,
-                                                                   withExtension: "mp4")!))
+                VideoPlayer(player:  AVPlayer(url: Bundle.main.url(forResource: content,withExtension: "mp4")!))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .cornerRadius(15.0)
                 .padding([.leading, .trailing])
