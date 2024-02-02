@@ -20,6 +20,7 @@
 		1123D4052B6356A100CB8B16 /* ShowSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1123D4042B6356A100CB8B16 /* ShowSignView.swift */; };
 		1178CB9A2B64441B008A815E /* ScanVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178CB992B64441B008A815E /* ScanVideoView.swift */; };
 		117E99052B6C961200E8C380 /* PiezasRompecabezas3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 117E99042B6C961200E8C380 /* PiezasRompecabezas3.mlmodel */; };
+		117E99072B6CA51A00E8C380 /* PiezasRompecabezas4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 117E99062B6CA51A00E8C380 /* PiezasRompecabezas4.mlmodel */; };
 		4AFF210E2B60649800401CD8 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF210D2B60649800401CD8 /* ArrowButton.swift */; };
 		FB5A05732B50817E00D09AD3 /* pruebaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05722B50817E00D09AD3 /* pruebaApp.swift */; };
 		FB5A05752B50817E00D09AD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A05742B50817E00D09AD3 /* ContentView.swift */; };
@@ -118,6 +119,7 @@
 		1123D4042B6356A100CB8B16 /* ShowSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSignView.swift; sourceTree = "<group>"; };
 		1178CB992B64441B008A815E /* ScanVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVideoView.swift; sourceTree = "<group>"; };
 		117E99042B6C961200E8C380 /* PiezasRompecabezas3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PiezasRompecabezas3.mlmodel; sourceTree = "<group>"; };
+		117E99062B6CA51A00E8C380 /* PiezasRompecabezas4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PiezasRompecabezas4.mlmodel; sourceTree = "<group>"; };
 		4AFF210D2B60649800401CD8 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
 		FB5A056F2B50817E00D09AD3 /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5A05722B50817E00D09AD3 /* pruebaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaApp.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				1123D3EB2B63537700CB8B16 /* PuzzleSigns1.mlmodel */,
+				117E99062B6CA51A00E8C380 /* PiezasRompecabezas4.mlmodel */,
 				117E99042B6C961200E8C380 /* PiezasRompecabezas3.mlmodel */,
 				1123D3EC2B63537700CB8B16 /* PredictionStatus.swift */,
 			);
@@ -593,6 +596,7 @@
 				FB5A05BB2B54765100D09AD3 /* Sign.swift in Sources */,
 				1178CB9A2B64441B008A815E /* ScanVideoView.swift in Sources */,
 				1123D4032B6354EB00CB8B16 /* ScanVideoView2.swift in Sources */,
+				117E99072B6CA51A00E8C380 /* PiezasRompecabezas4.mlmodel in Sources */,
 				1123D3ED2B63537700CB8B16 /* PuzzleSigns1.mlmodel in Sources */,
 				FB5A05B12B50FFC300D09AD3 /* CameraScanView.swift in Sources */,
 				FB5A059D2B5081DC00D09AD3 /* MenuView.swift in Sources */,
