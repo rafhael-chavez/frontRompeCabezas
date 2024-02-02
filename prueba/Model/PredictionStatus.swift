@@ -14,7 +14,7 @@ class PredictionStatus: ObservableObject {
     // TODO - replace with the name of your classifier
     //@Published var modelObject = SN3Equipo1()
     //@Published var modelObject = PuzzleSigns1()
-    @Published var modelObject = PiezasRompecabezas3()
+    @Published var modelObject = PiezasRompecabezas5()
     @Published var topLabel = ""
     @Published var topConfidence = ""
     
