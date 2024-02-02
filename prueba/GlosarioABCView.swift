@@ -71,7 +71,7 @@ struct GlosarioABCView: View {
                         }
                     }.padding()
                 }
-            }
+            }.navigationBarTitleDisplayMode(.inline)
         }
     }
 }
