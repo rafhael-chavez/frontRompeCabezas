@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "1D82082B-0D65-4577-9C25-8609D64E976D": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "2CDB3288-317B-4EB5-A133-7E251FF357E3": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "8B19C661-8F99-4465-9290-509E9C5E8161": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "LettersClassifier13.mlmodel",
+            "path": "com.apple.CoreML/LettersClassifier13.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "8B19C661-8F99-4465-9290-509E9C5E8161"
+}

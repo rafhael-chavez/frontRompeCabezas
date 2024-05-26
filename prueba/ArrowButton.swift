@@ -14,6 +14,8 @@ struct ArrowButton: View {
     var body: some View {
         Button(action: action) {
             Image(systemName: direction == "left" ? "arrowshape.backward.circle.fill" : "arrowshape.right.circle.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
                 .foregroundColor(.accentColor)
                 
         }
